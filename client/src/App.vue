@@ -17,5 +17,9 @@ export default {
 
 <!-- LOCAL STYLE SETTINGS -->
 <style lang="scss" scoped>
-
+@import './scss/variables';
+#app {
+  background-color: $main-dark;
+  height: 100vh;
+}
 </style>
