@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <button-back class="view__back-button"></button-back>
+    <button-back class="view__button"></button-back>
     <main-featured class="view__main"></main-featured>
     <nav-bar class="view__navbar"></nav-bar>
   </div>
@@ -30,16 +30,16 @@ export default {
   border: 1px solid grey;
   display: grid;
   grid-template-areas:
-    "back-button ."
-    ".           ."
-    "main        main"
-    "navbar      navbar";
+    "button"
+    "."
+    "main"
+    "navbar";
   grid-template-rows: 65px auto 370px 53px;
   height: 669px;
   margin: 0 auto;
   width: 376px;
-  &__back-button {
-    grid-area: back-button;
+  &__button {
+    grid-area: button;
   }
   &__main {
     grid-area: main;

@@ -43,6 +43,10 @@ export default {
   &__text {
     font-size: 14px;
     color: #999999;
+    cursor: pointer;
+    &:hover {
+      color: #ffffff;
+    }
   }
 }
 </style>
