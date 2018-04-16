@@ -1,12 +1,17 @@
 <template>
   <button class="button" @click="onClick">
-    <slot></slot>
+    <icon-arrow></icon-arrow>
   </button>
 </template>
 
 <script>
+import IconArrow from '@/components/IconArrow'
+
 export default {
   name: 'ButtonBack',
+  components: {
+    'icon-arrow': IconArrow
+  },
   methods: {
     onClick () {
       console.log('ButtonBack has been clicked')
