@@ -9,7 +9,9 @@
     <button-default>
       <icon-notifications></icon-notifications>
     </button-default>
-    <button-default>I4</button-default>
+    <button-default>
+      <icon-flag></icon-flag>
+    </button-default>
     <button-default>I5</button-default>
   </nav>
 </template>
@@ -19,6 +21,7 @@ import Button from '@/components/Button'
 import IconProfile from '@/components/IconProfile'
 import IconStatistics from '@/components/IconStatistics'
 import IconNotifications from '@/components/IconNotifications'
+import IconFlag from '@/components/IconFlag'
 
 export default {
   name: 'Navbar',
@@ -26,7 +29,8 @@ export default {
     'button-default': Button,
     'icon-profile': IconProfile,
     'icon-statistics': IconStatistics,
-    'icon-notifications': IconNotifications
+    'icon-notifications': IconNotifications,
+    'icon-flag': IconFlag
   }
 }
 </script>
