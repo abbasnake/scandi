@@ -20,7 +20,7 @@ export default {
 @import '../scss/variables';
 
 .main {
-  border: 1px solid white;
+  // border: 1px solid white;
   display: grid;
   grid-template-rows: 5fr 5fr 1fr 1fr;
   &__title {
@@ -35,13 +35,14 @@ export default {
     padding: 5px 40px 10px 10px;
   }
   &__info {
+    padding: 10px;
     &__by {
       font-family: $font-heebo;
       font-weight: 300;
     }
   }
   &__likes {
-
+    padding: 0 0 20px 10px;
   }
 }
 </style>
