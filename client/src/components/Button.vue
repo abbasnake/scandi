@@ -18,7 +18,7 @@ export default {
 <style lang="scss" scoped>
   .button {
     background-color: rgba(100, 100, 100, 0.2);
-    padding: 10px;
+    border: none;
     outline: none;
     &:hover > svg{
       fill: #ffffff;
