@@ -70,7 +70,7 @@ npm run build
     * [ ] figure out and develop responsiveness for other screen sizes
 2. [ ] You are allowed to use vanilla JavaScript or any framework of your choice
     * [x] setup vue
-    * [ ] organize file structure
+    * [x] organize file structure
     * [x] setup vue router
     * [x] setup vuex
 3. [ ] Using your imagination create animations for various effects
