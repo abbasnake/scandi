@@ -16,8 +16,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/variables';
+
   .button {
-    background-color: rgba(100, 100, 100, 0.2);
+    background-color: $main-dark;
     border: none;
     outline: none;
     &:hover > svg{

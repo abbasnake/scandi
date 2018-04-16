@@ -41,7 +41,7 @@ export default {
 
 <style lang="scss" scoped>
 .navbar {
-  // border: 1px solid white;
+  border-top: 1px solid grey;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   height: 53px;

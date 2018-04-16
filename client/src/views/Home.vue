@@ -22,7 +22,7 @@ export default {
 <style lang="scss" scoped>
 .view {
   background: url('../assets/image-standing.png') no-repeat;
-  border: 1px solid white;
+  border: 1px solid grey;
   display: grid;
   grid-template-areas:
     "back-button ."
