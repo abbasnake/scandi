@@ -8,30 +8,29 @@
     <hr>
     <div>AUTHOR - DATE</div>
     <div>LIKES</div>
-    <nav>NAVBAR</nav>
+    <nav-bar></nav-bar>
   </div>
 </template>
 
 <script>
 import IconArrow from '@/components/IconArrow'
 import ButtonBack from '@/components/ButtonBack'
+import Navbar from '@/components/Navbar'
 
 export default {
   name: 'Home',
   components: {
     'icon-arrow': IconArrow,
-    'button-back': ButtonBack
+    'button-back': ButtonBack,
+    'nav-bar': Navbar
   }
 }
 </script>
 
 <style lang="scss" scoped>
 .view {
-  background:
-    url('../assets/image-standing.png')
-    no-repeat;
+  background: url('../assets/image-standing.png') no-repeat;
   border: 1px solid white;
-  display: grid;
   height: 669px;
   margin: 0 auto;
   width: 376px;
