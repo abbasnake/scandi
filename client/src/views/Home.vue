@@ -26,6 +26,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .view {
-  }
+.view {
+  background:
+    url('../assets/image-standing.png')
+    no-repeat;
+  border: 1px solid white;
+  display: grid;
+  height: 669px;
+  margin: 0 auto;
+  width: 376px;
+}
 </style>
