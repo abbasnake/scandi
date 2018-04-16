@@ -73,6 +73,7 @@ npm run build
     * [x] setup vue router
     * [x] setup vuex
 3. [ ] Using your imagination create animations for various effects
+    * [ ] transition animation for view change
 4. [ ] Statistics data should be stored in localStorage
     * [ ] organize data
     * [ ] add data to localStorage
