@@ -24,7 +24,6 @@ export default {
 @import '../scss/variables';
 
 .main {
-  // border: 1px solid white;
   display: grid;
   grid-template-rows: 4fr 4fr 1fr 1fr;
   &__title {
