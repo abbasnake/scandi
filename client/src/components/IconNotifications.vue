@@ -1,0 +1,19 @@
+<template>
+  <svg class="icon-notifications">
+    <path d="M11.58 18.85L11.58 18.85M11.58 18.85L7.32 18.85C7.32 20.03 8.27 21 9.45 21C10.62 21 11.58 20.03 11.58 18.85M9.45 0C8.57 0 7.86 0.72 7.86 1.62L7.86 2.35C4.8 3.08 3.07 5.84 3.07 9.15L3.07 14.54L0.94 16.69L0.94 17.77L17.96 17.77L17.96 16.69L15.84 14.54L15.84 9.15C15.84 5.85 14.09 3.08 11.05 2.35L11.05 1.62C11.05 0.72 10.33 0 9.45 0" />
+  </svg>
+</template>
+
+<script>
+export default {
+  name: 'IconNotifications'
+}
+</script>
+
+<style lang="scss" scoped>
+.icon-notifications {
+  fill: #bbbbbb;
+  height: 24px;
+  width: 22px;
+}
+</style>
