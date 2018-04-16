@@ -16,7 +16,7 @@ We want you to create a development ready environment and that will serve a smal
 * App written in Vue.js
 * Vue will pretty much take care of the build system
 * Styles written in SCSS
-* I am using the standard JS style, which means no semicolons mong other things
+* I am using the standard JS style, which means no semicolons among other things
 
 ### Requirements
 
@@ -74,3 +74,7 @@ npm i -D sass-loader node-sass style-loader
 Do as much as you can with the provided assets/information, use your imagination to create additional cool animations, interesting features, whatever you want. Don’t be afraid to send partial result if you are struggling with some step, describe issues you had and we will take it into consideration. In the of the day, your mindset and thoughts behind the implementation is what important.
 
 Thank you and good luck!
+
+### Messy Comments
+
+**R:** this section is just meant for me. It's to quickly add some keywords or comments or points of interest for possible use later
