@@ -11,8 +11,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/variables';
+
 .icon-statistics {
-  fill: #bbbbbb;
+  fill: $icon-grey;
   height: 18px;
   width: 18px;
 }

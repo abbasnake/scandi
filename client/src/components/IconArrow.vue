@@ -11,8 +11,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/variables';
+
 .icon-arrow {
-  fill: #bbbbbb;
+  fill: $icon-grey;
   height: 18px;
   position: relative;
   right: 2px;

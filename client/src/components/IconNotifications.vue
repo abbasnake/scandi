@@ -11,8 +11,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/variables';
+
 .icon-notifications {
-  fill: #bbbbbb;
+  fill: $icon-grey;
   height: 22px;
   width: 18px;
 }
