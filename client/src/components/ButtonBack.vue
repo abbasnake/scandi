@@ -9,7 +9,7 @@ export default {
   name: 'ButtonBack',
   methods: {
     onClick () {
-      console.log('I have been clicked')
+      console.log('ButtonBack has been clicked')
     }
   }
 }
@@ -17,14 +17,14 @@ export default {
 
 <style lang="scss" scoped>
   .button {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: rgba(100, 100, 100, 0.2);
     border: none;
     border-radius: 50%;
     height: 45px;
     margin: 10px;
     padding: 10px;
     width: 45px;
-    &:hover {
+    &:hover > svg{
       fill: #ffffff;
     }
   }
