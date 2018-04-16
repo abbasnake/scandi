@@ -1,19 +1,21 @@
 <template>
   <div class="view">
     <button-back class="view__back-button"></button-back>
-    <div class="view__featured">TITLE SUBTITLE by somebody date likes</div>
+    <main-featured class="view__main"></main-featured>
     <nav-bar class="view__navbar"></nav-bar>
   </div>
 </template>
 
 <script>
 import ButtonBack from '@/components/ButtonBack'
+import MainFeatured from '@/components/MainFeatured'
 import Navbar from '@/components/Navbar'
 
 export default {
   name: 'Home',
   components: {
     'button-back': ButtonBack,
+    'main-featured': MainFeatured,
     'nav-bar': Navbar
   }
 }
@@ -27,7 +29,7 @@ export default {
   grid-template-areas:
     "back-button ."
     ".           ."
-    "featured    featured"
+    "main        main"
     "navbar      navbar";
   grid-template-rows: 65px 1fr 2fr 53px;
   height: 669px;
@@ -36,8 +38,8 @@ export default {
   &__back-button {
     grid-area: back-button;
   }
-  &__featured {
-    grid-area: featured;
+  &__main {
+    grid-area: main;
   }
   &__navbar {
     grid-area: navbar
