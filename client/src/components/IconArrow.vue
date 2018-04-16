@@ -13,9 +13,10 @@ export default {
 <style lang="scss" scoped>
 .icon-arrow {
   fill: #bbbbbb;
-  height: 17px;
+  height: 18px;
   position: relative;
   right: 2px;
+  top: 2px;
   width: 10px;
 }
 </style>

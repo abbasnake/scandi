@@ -12,7 +12,9 @@
     <button-default>
       <icon-flag></icon-flag>
     </button-default>
-    <button-default>I5</button-default>
+    <button-default>
+      <icon-home></icon-home>
+    </button-default>
   </nav>
 </template>
 
@@ -22,6 +24,7 @@ import IconProfile from '@/components/IconProfile'
 import IconStatistics from '@/components/IconStatistics'
 import IconNotifications from '@/components/IconNotifications'
 import IconFlag from '@/components/IconFlag'
+import IconHome from '@/components/IconHome'
 
 export default {
   name: 'Navbar',
@@ -30,7 +33,8 @@ export default {
     'icon-profile': IconProfile,
     'icon-statistics': IconStatistics,
     'icon-notifications': IconNotifications,
-    'icon-flag': IconFlag
+    'icon-flag': IconFlag,
+    'icon-home': IconHome
   }
 }
 </script>
