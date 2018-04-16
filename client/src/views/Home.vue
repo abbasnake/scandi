@@ -31,7 +31,7 @@ export default {
     ".           ."
     "main        main"
     "navbar      navbar";
-  grid-template-rows: 65px 1fr 2fr 53px;
+  grid-template-rows: 65px auto 370px 53px;
   height: 669px;
   margin: 0 auto;
   width: 376px;
