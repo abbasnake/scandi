@@ -38,13 +38,22 @@ npm i -D sass-loader node-sass style-loader
 ```
 
 
-1. [ ] Create a development ready build system
-2. [ ] Your build tool should compile SCSS to CSS
-3. [ ] …should transform ES6 syntax
-4. [ ] …should create sourcemaps for JS/SCSS
-5. [ ] …should optimise assets
-6. [ ] …should be watching for a code changes and compile on save
-7. [ ] …should create a localhost environment
+1. [x] Create a development ready build system
+2. [x] Your build tool should compile SCSS to CSS
+3. [x] …should transform ES6 syntax
+4. [x] …should create sourcemaps for JS/SCSS
+5. [x] …should optimise assets
+6. [x] …should be watching for a code changes and compile on save
+7. [x] …should create a localhost environment
+
+```bash
+# for development (compilation/dev server/hot reload etc)
+npm run dev
+
+# for build (minification/optimisation/src maps etc)
+# this creates a dist folder with an index.html file and static folder where CSS/JS lives
+npm run build
+```
 
 #### Application
 
@@ -78,3 +87,4 @@ Thank you and good luck!
 ### Messy Comments
 
 **R:** this section is just meant for me. It's to quickly add some keywords or comments or points of interest for possible use later
+* vue devtools
