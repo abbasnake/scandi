@@ -1,16 +1,21 @@
 <template>
   <nav class="navbar">
-    <div>I1</div>
-    <div>I2</div>
-    <div>I3</div>
-    <div>I4</div>
-    <div>I5</div>
+    <button-default>I1</button-default>
+    <button-default>I2</button-default>
+    <button-default>I3</button-default>
+    <button-default>I4</button-default>
+    <button-default>I5</button-default>
   </nav>
 </template>
 
 <script>
+import Button from '@/components/Button'
+
 export default {
-  name: 'Navbar'
+  name: 'Navbar',
+  components: {
+    'button-default': Button
+  }
 }
 </script>
 
