@@ -64,10 +64,10 @@ npm run build
     * [ ] extract SVG's
     * [ ] get colors and fonts
 2. [ ] You are allowed to use vanilla JavaScript or any framework of your choice
-    * [ ] setup vue
+    * [x] setup vue
     * [ ] organize file structure
-    * [ ] setup vue router
-    * [ ] setup vuex
+    * [x] setup vue router
+    * [x] setup vuex
 3. [ ] Using your imagination create animations for various effects
 4. [ ] Statistics data should be stored in localStorage
     * [ ] organize data
