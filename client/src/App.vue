@@ -13,11 +13,12 @@ export default {
 <!-- GLOBAL STYLE SETTINGS -->
 <style lang="scss">
 @import './scss/reset';
+@import './scss/variables';
+@import './scss/global-styles';
 </style>
 
 <!-- LOCAL STYLE SETTINGS -->
 <style lang="scss" scoped>
-@import './scss/global-styles';
 @import './scss/variables';
 
 #app {
