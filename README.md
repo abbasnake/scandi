@@ -62,7 +62,8 @@ npm run build
 1. [ ] Create application using provided PSD file
     * [ ] extract images
     * [ ] extract SVG's
-    * [ ] get colors and fonts
+    * [ ] get and set colors
+    * [ ] get and set fonts
 2. [ ] You are allowed to use vanilla JavaScript or any framework of your choice
     * [x] setup vue
     * [ ] organize file structure
