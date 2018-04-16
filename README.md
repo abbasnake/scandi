@@ -97,3 +97,4 @@ Thank you and good luck!
 * icon file
 * CSS reset best practices/efficiency
 * google fonts did not have Lato medium, and what is the most efficient way to add fonts
+* SVG necessary attributes
