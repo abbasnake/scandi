@@ -17,6 +17,7 @@ We want you to create a development ready environment and that will serve a smal
 * Vue will pretty much take care of the build system
 * Styles written in SCSS
 * I am using the standard JS style, which means no semicolons among other things
+* I'm viewing the result in Google Chrome with the vue dev tools addon
 
 ### Requirements
 
