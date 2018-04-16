@@ -90,4 +90,4 @@ Thank you and good luck!
 * vue devtools
 * components/views
 * icon file
-* CSS reset
+* CSS reset best practices/efficiency
