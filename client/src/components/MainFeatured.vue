@@ -6,13 +6,17 @@
       <span class="main__info__by">By</span>
       Nicholas O`Brian 28 july
     </section>
-    <section class="main__likes">PP PP +76 Liked this</section>
+    <main-featured-likes class="main__likes"></main-featured-likes>
   </main>
 </template>
 
 <script>
+import MainFeaturedLikes from '@/components/MainFeaturedLikes'
 export default {
-  name: 'MainFeatured'
+  name: 'MainFeatured',
+  components: {
+    'main-featured-likes': MainFeaturedLikes
+  }
 }
 </script>
 
@@ -22,7 +26,7 @@ export default {
 .main {
   // border: 1px solid white;
   display: grid;
-  grid-template-rows: 5fr 5fr 1fr 1fr;
+  grid-template-rows: 4fr 4fr 1fr 1fr;
   &__title {
     font-size: 40px;
     font-weight: 300;
@@ -40,9 +44,6 @@ export default {
       font-family: $font-heebo;
       font-weight: 300;
     }
-  }
-  &__likes {
-    padding: 0 0 20px 10px;
   }
 }
 </style>
