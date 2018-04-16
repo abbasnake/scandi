@@ -88,3 +88,4 @@ Thank you and good luck!
 
 **R:** this section is just meant for me. It's to quickly add some keywords or comments or points of interest for possible use later
 * vue devtools
+* components/views
