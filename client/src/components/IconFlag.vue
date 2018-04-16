@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 .icon-flag {
   fill: #bbbbbb;
-  height: 24px;
-  width: 18px;
+  height: 21px;
+  width: 16px;
 }
 </style>

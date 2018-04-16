@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 .icon-notifications {
   fill: #bbbbbb;
-  height: 24px;
-  width: 22px;
+  height: 22px;
+  width: 18px;
 }
 </style>

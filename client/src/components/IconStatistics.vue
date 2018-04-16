@@ -13,7 +13,7 @@ export default {
 <style lang="scss" scoped>
 .icon-statistics {
   fill: #bbbbbb;
-  height: 20px;
-  width: 19px;
+  height: 18px;
+  width: 18px;
 }
 </style>
