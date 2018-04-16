@@ -60,10 +60,13 @@ npm run build
 **R:** I am adding my own "TODO's" in this list to help see what needs to be done or where I'm experiencing problems.
 
 1. [ ] Create application using provided PSD file
-    * [ ] extract images
-    * [ ] extract SVG's
+    * [x] extract images
+    * [x] extract SVG's
     * [ ] get and set colors
     * [ ] get and set fonts
+    * [ ] do home view
+    * [ ] do statistics view
+    * [ ] figure out and develop responsiveness for other screen sizes
 2. [ ] You are allowed to use vanilla JavaScript or any framework of your choice
     * [x] setup vue
     * [ ] organize file structure
