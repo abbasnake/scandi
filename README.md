@@ -37,36 +37,36 @@ npm i -D sass-loader node-sass style-loader
 ```
 
 
-1. [] Create a development ready build system
-2. [] Your build tool should compile SCSS to CSS
-3. [] …should transform ES6 syntax
-4. [] …should create sourcemaps for JS/SCSS
-5. [] …should optimise assets
-6. [] …should be watching for a code changes and compile on save
-7. [] …should create a localhost environment
+1. [ ] Create a development ready build system
+2. [ ] Your build tool should compile SCSS to CSS
+3. [ ] …should transform ES6 syntax
+4. [ ] …should create sourcemaps for JS/SCSS
+5. [ ] …should optimise assets
+6. [ ] …should be watching for a code changes and compile on save
+7. [ ] …should create a localhost environment
 
 #### Application
 
 **R:** I am adding my own "TODO's" in this list to help see what needs to be done or where I'm experiencing problems.
 
-1. [] Create application using provided PSD file
-  * [] extract images
-  * [] extract SVG's
-  * [] get colors and fonts
-2. [] You are allowed to use vanilla JavaScript or any framework of your choice
-  * [] setup vue
-  * [] organize file structure
-  * [] setup vue router
-  * [] setup vuex
-3. [] Using your imagination create animations for various effects
-4. [] Statistics data should be stored in localStorage
-  * [] organize data
-  * [] add data to localStorage
-5. [] User should be able to check statistic for various months within the current year
-6. [] Application should have public methods to manage (create/delete) data entries
-  * **R:** not entirely sure what would constitute "public" in this case or how one would design a "public" API differently. I believe I can setup GET routes with paramiters as getters and setters, but it wouldn't be very RESTful and if that is the point at all. Google needed.
-  * [] setup routes that manipulate localStorage data
-7. [] You can extend the application as many functionality/layouts as you want
+1. [ ] Create application using provided PSD file
+    * [ ] extract images
+    * [ ] extract SVG's
+    * [ ] get colors and fonts
+2. [ ] You are allowed to use vanilla JavaScript or any framework of your choice
+    * [ ] setup vue
+    * [ ] organize file structure
+    * [ ] setup vue router
+    * [ ] setup vuex
+3. [ ] Using your imagination create animations for various effects
+4. [ ] Statistics data should be stored in localStorage
+    * [ ] organize data
+    * [ ] add data to localStorage
+5. [ ] User should be able to check statistic for various months within the current year
+6. [ ] Application should have public methods to manage (create/delete) data entries
+    * **R:** not entirely sure what would constitute "public" in this case or how one would design a "public" API differently. I believe I can setup GET routes with paramiters as getters and setters, but it wouldn't be very RESTful and if that is the point at all. Google needed.
+    * [ ] setup routes that manipulate localStorage data
+7. [ ] You can extend the application as many functionality/layouts as you want
 
 ### Final words
 
