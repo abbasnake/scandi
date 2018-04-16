@@ -23,7 +23,10 @@ export default {
 
 <style lang="scss" scoped>
 .view {
-  background: url('../assets/image-standing.png') no-repeat;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../assets/image-standing.png');
+  background-repeat: no-repeat;
   border: 1px solid grey;
   display: grid;
   grid-template-areas:
