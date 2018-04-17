@@ -103,3 +103,4 @@ Thank you and good luck!
 * SVG necessary attributes
 * need linear-gradient just on background image not where the image ends (maybe img and z-index>)
 * component naming is a mess, need system
+* should have planned more carefully (see what components overlap)
