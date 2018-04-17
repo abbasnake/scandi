@@ -66,6 +66,8 @@ npm run build
     * [ ] get and set colors
     * [ ] get and set fonts
     * [ ] do home view
+        * [ ] add the purple banner
+        * [ ] add profile pictures
     * [ ] do statistics view
     * [ ] figure out and develop responsiveness for other screen sizes
 2. [ ] You are allowed to use vanilla JavaScript or any framework of your choice
