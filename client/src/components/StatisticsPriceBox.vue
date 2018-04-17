@@ -28,13 +28,10 @@ export default {
   grid-template-areas:
     "icon price"
     "text text";
-  // justify-items: center;
   &__icon {
     display: grid;
     grid-area: icon;
     justify-items: end;
-    // padding-right: 8px;
-    top: 3px;
   }
   &__price {
     grid-area: price;

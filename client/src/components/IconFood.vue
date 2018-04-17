@@ -16,6 +16,7 @@ export default {
 .icon-food {
   fill: #ffffff;
   height: 16px;
+  top: 3px;
   width: 14px;
 }
 </style>

@@ -50,10 +50,10 @@ export default {
     border: 1px solid $accent-blue;
     border-radius: 5px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      "dollars cents"
-      "dollars icon";
+      ". dollars cents ."
+      ". dollars icon .";
     height: 100%;
     &__dollars {
       align-self: center;
