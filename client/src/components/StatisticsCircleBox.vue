@@ -1,7 +1,9 @@
 <template>
   <div class="box">
     <icon-ellipse class="box__background"></icon-ellipse>
-    <span class="box__dollars">$420</span>
+    <span class="box__dollars">
+      {{ getBalance }}
+    </span>
   </div>
 </template>
 
@@ -12,6 +14,16 @@ export default {
   name: 'StatisticsCircleBox',
   components: {
     'icon-ellipse': IconEllipse
+  },
+  computed: {
+    getBalance () {
+      let currentMonth = this.$store.state.currentMonth
+      let currentIncrease = this.$store.state.data[currentMonth].increase
+      let currentDecrease = this.$store.state.data[currentMonth].decrease
+      let currentBalance = currentIncrease - currentDecrease
+      let prefix = currentBalance >= 0 ? '+$' : '-$'
+      return `${prefix}${Math.floor(currentBalance)}`
+    }
   }
 }
 </script>
