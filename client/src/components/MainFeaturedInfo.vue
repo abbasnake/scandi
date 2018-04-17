@@ -18,7 +18,6 @@ export default {
 .info {
   display: grid;
   grid-template-columns: 23px auto 60px;
-  padding: 12px;
   &__by {
     font-family: $font-heebo;
     font-weight: 300;

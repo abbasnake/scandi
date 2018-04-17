@@ -17,7 +17,7 @@ export default {
 @import '../scss/variables';
 
 .likes {
-  padding: 10px 0 20px 10px;
+  // padding: 10px 0 10px 0;
   &__profile {
     background-color: white;
     border-radius: 50%;
