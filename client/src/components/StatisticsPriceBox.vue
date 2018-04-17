@@ -21,7 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 .box {
-  border: 1px solid white;
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr;
@@ -32,6 +31,7 @@ export default {
     display: grid;
     grid-area: icon;
     justify-items: end;
+    padding-right: 5px;
   }
   &__price {
     grid-area: price;
@@ -43,6 +43,7 @@ export default {
     font-size: 14px;
     grid-area: text;
     text-align: center;
+    padding-left: 15px;
   }
 }
 </style>
