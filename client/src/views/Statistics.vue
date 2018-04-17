@@ -1,7 +1,7 @@
 <template>
   <div class="view">
-    <button-back class="view__button" @clicked="toHomepage"></button-back>
-    <div class="view__title">BACK BUTTON - PAGE TILE</div>
+    <button-back class="view__button" @clicked="toHomepage"></button-back> <!-- not part of the grid layout -->
+    <header-box class="view__header"></header-box>
     <div class="view__months">MONTH NAV</div>
     <div class="view__main">BALANCE CIRCLE</div>
     <price-box></price-box>
@@ -16,13 +16,15 @@
 import ButtonBack from '@/components/ButtonBack'
 import StatisticsBalanceBox from '@/components/StatisticsBalanceBox'
 import StatisticsPriceBox from '@/components/StatisticsPriceBox'
+import StatisticsHeaderBox from '@/components/StatisticsHeaderBox'
 
 export default {
   name: 'Statistics',
   components: {
     'button-back': ButtonBack,
     'balance-box': StatisticsBalanceBox,
-    'price-box': StatisticsPriceBox
+    'price-box': StatisticsPriceBox,
+    'header-box': StatisticsHeaderBox
   },
   methods: {
     toHomepage () {
