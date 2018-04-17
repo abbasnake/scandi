@@ -5,8 +5,8 @@
     <div class="view__main">BALANCE CIRCLE</div>
     <div class="view__price">FOOD AND RESTAURANT</div>
     <div class="view__balance">
-      <balance-box></balance-box>
-      <balance-box></balance-box>
+      <balance-box type="increase"></balance-box>
+      <balance-box type="decrease"></balance-box>
     </div>
   </div>
 </template>
