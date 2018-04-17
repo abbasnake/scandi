@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <div class="box__border" :class="{'border-decrease': borderRed}">
+    <div class="box__border" :class="{'border-decrease': borderDecrease}">
       <div class="box__border__dollars">+$1400</div>
       <div class="box__border__cents">99</div>
       <div class="box__border__icon">
@@ -19,8 +19,7 @@ export default {
   name: 'StatisticsBalanceBox',
   data () {
     return {
-      borderRed: this.isDecrease(),
-      borderBlue: false
+      borderDecrease: this.isDecrease()
     }
   },
   props: {
@@ -33,11 +32,7 @@ export default {
   },
   methods: {
     isDecrease () {
-      let isRed = false
-      if (this.type === 'decrease') {
-        isRed = true
-      }
-      return isRed
+      return this.type === 'decrease'
     }
   }
 }
@@ -47,7 +42,6 @@ export default {
 @import '../scss/variables';
 
 .box {
-  border: 1px solid blue;
   height: 100%;
   padding: 10px;
   &__border {
@@ -78,10 +72,7 @@ export default {
   }
 }
 
-.border-increase {
-  border: 1px solid $accent-blue;
-}
-
+// add this border if decrease box otherwise (default) increase box border
 .border-decrease {
   border: 1px solid $accent-red;
 }
