@@ -26,8 +26,8 @@ export default {
     'li-month': LiMonth
   },
   methods: {
-    onClick (e) {
-      console.log(e)
+    onClick (month) {
+      this.$store.dispatch('setCurrentMonth', month)
     }
   }
 }

@@ -41,8 +41,8 @@ export default {
   },
   computed: {
     getCurrentAmount () {
-      let currentMonth = this.$store.state.currentMonth
-      return this.$store.state.data[currentMonth][this.type]
+      let type = this.isDecrease() ? 'Decrease' : 'Increase'
+      return this.$store.getters[`current${type}`]
     },
     getDollars () {
       let currentAmount = this.getCurrentAmount

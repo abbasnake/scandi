@@ -17,9 +17,8 @@ export default {
   },
   computed: {
     getBalance () {
-      let currentMonth = this.$store.state.currentMonth
-      let currentIncrease = this.$store.state.data[currentMonth].increase
-      let currentDecrease = this.$store.state.data[currentMonth].decrease
+      let currentIncrease = this.$store.getters.currentIncrease
+      let currentDecrease = this.$store.getters.currentDecrease
       let currentBalance = currentIncrease - currentDecrease
       let prefix = currentBalance >= 0 ? '+$' : '-$'
       return `${prefix}${Math.floor(currentBalance)}`

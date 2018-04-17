@@ -10,10 +10,16 @@ export default new Vuex.Store({
     data: {}
   },
   getters: {
+    currentMonth: state => state.currentMonth,
+    currentIncrease: state => state.data[state.currentMonth].increase,
+    currentDecrease: state => state.data[state.currentMonth].decrease
   },
   mutations: {
     loadData (state, payload) {
       state.data = payload
+    },
+    setCurrentMonth (state, payload) {
+      state.currentMonth = payload
     }
   },
   actions: {
@@ -32,6 +38,10 @@ export default new Vuex.Store({
         localStorage.setItem('scandiData', stringifiedData) // save to localStorage
         context.commit('loadData', localData) // set it to state.data property
       }
+    },
+    setCurrentMonth (context, payload) {
+      let month = payload.slice(0, 3).toLowerCase() // transforming data to match key name
+      context.commit('setCurrentMonth', month)
     }
   }
 })
