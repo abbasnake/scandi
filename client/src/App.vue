@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view/>
+    <!-- <transition name="slide-fade"> -->
+      <router-view/>
+    <!-- </transition> -->
   </div>
 </template>
 
@@ -27,5 +29,21 @@ export default {
 #app {
   background-color: $main-dark;
   height: 100vh;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.9s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.5s ease;
+}
+.slide-fade-enter {
+  transform: translateX(-1000px);
+  opacity: 0;
+}
+
+.slide-fade-leave-to{
+  transform: translateX(-1000px);
+  opacity: 0;
 }
 </style>

@@ -1,9 +1,11 @@
 <template>
-  <div class="view">
-    <button-back class="view__button"></button-back>
-    <main-featured class="view__main"></main-featured>
-    <nav-bar class="view__navbar"></nav-bar>
-  </div>
+  <transition name="slide-fade">
+    <div class="view">
+      <button-back class="view__button"></button-back>
+      <main-featured class="view__main"></main-featured>
+      <nav-bar class="view__navbar"></nav-bar>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -47,5 +49,23 @@ export default {
   &__navbar {
     grid-area: navbar
   }
+}
+
+// TRANSITION ANIMATION
+.slide-fade-enter-active {
+  transition: all 0.5s ease-out;
+  transition-delay: 0.5s;
+}
+.slide-fade-leave-active {
+  transition: all 0.5s ease-out;
+}
+.slide-fade-enter {
+  transform: translateX(-1000px);
+  // transition-delay: 0.5s;
+  opacity: 0;
+}
+.slide-fade-leave-to{
+  transform: translateX(1000px);
+  opacity: 0;
 }
 </style>

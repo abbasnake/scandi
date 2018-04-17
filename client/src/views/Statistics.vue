@@ -1,15 +1,17 @@
 <template>
-  <div class="view">
-    <button-back class="view__button" @clicked="toHomepage"></button-back> <!-- not part of the grid layout -->
-    <header-box></header-box>
-    <navbar-months></navbar-months>
-    <circle-box></circle-box>
-    <price-box></price-box>
-    <div class="view__balance">
-      <balance-box type="increase"></balance-box> <!-- maybe scoped slots? -->
-      <balance-box type="decrease"></balance-box>
+  <transition name="slide-fade">
+    <div class="view">
+      <button-back class="view__button" @clicked="toHomepage"></button-back> <!-- not part of the grid layout -->
+      <header-box></header-box>
+      <navbar-months></navbar-months>
+      <circle-box></circle-box>
+      <price-box></price-box>
+      <div class="view__balance">
+        <balance-box type="increase"></balance-box> <!-- maybe scoped slots? -->
+        <balance-box type="decrease"></balance-box>
+      </div>
     </div>
-  </div>
+  </transition>
 </template>
 
 <script>
@@ -54,5 +56,23 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+// TRANSITION ANIMATION
+.slide-fade-enter-active {
+  transition: all 0.9s ease;
+  transition-delay: 0.5s;
+}
+.slide-fade-leave-active {
+  transition: all 0.5s ease;
+}
+.slide-fade-enter {
+  transform: translateY(-1000px);
+  // transition-delay: 0.5s;
+  opacity: 0;
+}
+.slide-fade-leave-to{
+  transform: translateY(1000px);
+  opacity: 0;
 }
 </style>
