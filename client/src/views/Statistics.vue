@@ -1,5 +1,6 @@
 <template>
   <div class="view">
+    <button-back class="view__button" @clicked="toHomepage"></button-back>
     <div class="view__title">BACK BUTTON - PAGE TILE</div>
     <div class="view__months">MONTH NAV</div>
     <div class="view__main">BALANCE CIRCLE</div>
@@ -12,14 +13,21 @@
 </template>
 
 <script>
+import ButtonBack from '@/components/ButtonBack'
 import StatisticsBalanceBox from '@/components/StatisticsBalanceBox'
 import StatisticsPriceBox from '@/components/StatisticsPriceBox'
 
 export default {
   name: 'Statistics',
   components: {
+    'button-back': ButtonBack,
     'balance-box': StatisticsBalanceBox,
     'price-box': StatisticsPriceBox
+  },
+  methods: {
+    toHomepage () {
+      this.$router.push('/')
+    }
   }
 }
 </script>
@@ -32,6 +40,10 @@ export default {
   height: 669px;
   margin: 0 auto;
   width: 376px;
+  &__button {
+    position: absolute;
+    z-index: 1;
+  }
   &__balance {
     display: grid;
     grid-template-columns: 1fr 1fr;

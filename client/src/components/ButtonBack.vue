@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     onClick () {
-      console.log('ButtonBack has been clicked')
+      this.$emit('clicked')
     }
   }
 }
