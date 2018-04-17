@@ -1,13 +1,13 @@
 <template>
   <div class="view">
     <button-back class="view__button" @clicked="toHomepage"></button-back> <!-- not part of the grid layout -->
-    <header-box class="view__header"></header-box>
-    <navbar-months class="view__navbar"></navbar-months>
+    <header-box></header-box>
+    <navbar-months></navbar-months>
     <circle-box></circle-box>
     <price-box></price-box>
     <div class="view__balance">
-      <balance-box type="increase">+$1400</balance-box> <!-- maybe scoped slots -->
-      <balance-box type="decrease">-$980</balance-box>
+      <balance-box type="increase"></balance-box> <!-- maybe scoped slots? -->
+      <balance-box type="decrease"></balance-box>
     </div>
   </div>
 </template>

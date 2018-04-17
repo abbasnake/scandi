@@ -1,17 +1,17 @@
 <template>
   <div class="box">
-    <ellipse-background class="box__background"></ellipse-background> 
+    <icon-ellipse class="box__background"></icon-ellipse>
     <span class="box__dollars">$420</span>
   </div>
 </template>
 
 <script>
-import EllipseBackground from '@/components/EllipseBackground'
+import IconEllipse from '@/components/IconEllipse'
 
 export default {
   name: 'StatisticsCircleBox',
   components: {
-    'ellipse-background': EllipseBackground
+    'icon-ellipse': IconEllipse
   }
 }
 </script>
@@ -23,7 +23,6 @@ export default {
     position: absolute;
     top: 20%;
     left: 20%;
-    z-index: 0;
   }
   &__dollars {
     font-size: 28px;

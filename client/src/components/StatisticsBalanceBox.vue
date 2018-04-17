@@ -2,9 +2,11 @@
   <div class="box">
     <div class="box__border" :class="{'border-decrease': borderDecrease}">
       <div class="box__border__dollars">
-        <slot></slot>
+        {{ getDollars }}
       </div>
-      <div class="box__border__cents">99</div>
+      <div class="box__border__cents">
+        {{ getCents }}
+      </div>
       <div class="box__border__icon">
         <icon-increase v-if="type === 'increase'"></icon-increase>
         <icon-decrease v-else-if="type === 'decrease'"></icon-decrease>
@@ -36,6 +38,22 @@ export default {
     isDecrease () {
       return this.type === 'decrease'
     }
+  },
+  computed: {
+    getCurrentAmount () {
+      let currentMonth = this.$store.state.currentMonth
+      return this.$store.state.data[currentMonth][this.type]
+    },
+    getDollars () {
+      let currentAmount = this.getCurrentAmount
+      let prefix = this.isDecrease() ? '-$' : '+$'
+      return `${prefix}${Math.floor(currentAmount)}`
+    },
+    getCents () {
+      let currentAmount = this.getCurrentAmount
+      let cents = currentAmount.toString().slice(-2)
+      return cents
+    }
   }
 }
 </script>
@@ -52,8 +70,8 @@ export default {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-      ". dollars cents ."
-      ". dollars icon .";
+    ". dollars cents ."
+    ". dollars icon .";
     height: 100%;
     &__dollars {
       align-self: center;
