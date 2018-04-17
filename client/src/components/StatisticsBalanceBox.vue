@@ -1,7 +1,9 @@
 <template>
   <div class="box">
     <div class="box__border" :class="{'border-decrease': borderDecrease}">
-      <div class="box__border__dollars">+$1400</div>
+      <div class="box__border__dollars">
+        <slot></slot>
+      </div>
       <div class="box__border__cents">99</div>
       <div class="box__border__icon">
         <icon-increase v-if="type === 'increase'"></icon-increase>
