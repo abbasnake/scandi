@@ -3,20 +3,23 @@
     <div class="view__title">BACK BUTTON - PAGE TILE</div>
     <div class="view__months">MONTH NAV</div>
     <div class="view__main">BALANCE CIRCLE</div>
-    <div class="view__price">FOOD AND RESTAURANT</div>
+    <price-box></price-box>
     <div class="view__balance">
-      <balance-box type="increase"></balance-box>
-      <balance-box type="decrease"></balance-box>
+      <balance-box type="increase">+$1400</balance-box> <!-- maybe scoped slots -->
+      <balance-box type="decrease">-$980</balance-box>
     </div>
   </div>
 </template>
 
 <script>
 import StatisticsBalanceBox from '@/components/StatisticsBalanceBox'
+import StatisticsPriceBox from '@/components/StatisticsPriceBox'
+
 export default {
   name: 'Statistics',
   components: {
-    'balance-box': StatisticsBalanceBox
+    'balance-box': StatisticsBalanceBox,
+    'price-box': StatisticsPriceBox
   }
 }
 </script>
