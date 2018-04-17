@@ -3,7 +3,7 @@
     <button-default>
       <icon-profile></icon-profile>
     </button-default>
-    <button-default>
+    <button-default @clicked="statisticsClicked">
       <icon-statistics></icon-statistics>
     </button-default>
     <button-default>
@@ -35,6 +35,11 @@ export default {
     'icon-notifications': IconNotifications,
     'icon-flag': IconFlag,
     'icon-home': IconHome
+  },
+  methods: {
+    statisticsClicked () {
+      this.$router.push('/statistics')
+    }
   }
 }
 </script>

@@ -1,5 +1,11 @@
 <template>
-  <h1>hello im statistics view</h1>
+  <div class="view">
+    <div>BACK BUTTON - PAGE TILE</div>
+    <div>MONTH NAV</div>
+    <div>BALANCE CIRCLE</div>
+    <div>FOOD AND RESTAURANT</div>
+    <div>INCREASE-DECREASE</div>
+  </div>
 </template>
 
 <script>
@@ -9,7 +15,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h1 {
-  background-color: aqua;
+.view {
+  border: 1px solid white;
+  height: 669px;
+  margin: 0 auto;
+  width: 376px;
 }
 </style>

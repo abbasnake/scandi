@@ -9,7 +9,7 @@ export default {
   name: 'Button',
   methods: {
     onClick () {
-      console.log('Button has been clicked')
+      this.$emit('clicked')
     }
   }
 }
