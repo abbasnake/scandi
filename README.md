@@ -102,3 +102,4 @@ Thank you and good luck!
 * google fonts did not have Lato medium, and what is the most efficient way to add fonts
 * SVG necessary attributes
 * need linear-gradient just on background image not where the image ends (maybe img and z-index>)
+* component naming is a mess, need system
