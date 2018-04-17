@@ -24,7 +24,7 @@ export default {
 <style lang="scss" scoped>
 .view {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
     url('../assets/image-standing.png');
   background-repeat: no-repeat;
   border: 1px solid grey;
