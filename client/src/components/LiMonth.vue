@@ -1,6 +1,8 @@
 <template>
   <li class="item" @click="onClick($event)">
-    <slot></slot>
+    <div class="item__container">
+      <slot></slot>
+    </div>
   </li>
 </template>
 
@@ -21,6 +23,12 @@ export default {
   cursor: pointer;
   &:hover {
     color: #ffffff;
+  }
+  &__container {
+    color: inherit;
+    display: grid;
+    justify-items: center;
+    top: 18px;
   }
 }
 </style>

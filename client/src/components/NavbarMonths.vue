@@ -34,14 +34,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/variables';
+
 .navbar {
+  background-color: $secondary-dark;
   display: grid;
   overflow: hidden;
   width: 100%;
   &__items {
     display: grid;
-    grid-gap: 35px;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 100px);
     overflow-x: scroll;
     overflow-y: hidden;
     height: 130%; // to hide the scrollbar

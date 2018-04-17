@@ -3,7 +3,7 @@
     <button-back class="view__button" @clicked="toHomepage"></button-back> <!-- not part of the grid layout -->
     <header-box class="view__header"></header-box>
     <navbar-months class="view__navbar"></navbar-months>
-    <div class="view__main">BALANCE CIRCLE</div>
+    <circle-box></circle-box>
     <price-box></price-box>
     <div class="view__balance">
       <balance-box type="increase">+$1400</balance-box> <!-- maybe scoped slots -->
@@ -17,6 +17,7 @@ import ButtonBack from '@/components/ButtonBack'
 import StatisticsBalanceBox from '@/components/StatisticsBalanceBox'
 import StatisticsPriceBox from '@/components/StatisticsPriceBox'
 import StatisticsHeaderBox from '@/components/StatisticsHeaderBox'
+import StatisticsCircleBox from '@/components/StatisticsCircleBox'
 import NavbarMonths from '@/components/NavbarMonths'
 
 export default {
@@ -26,7 +27,8 @@ export default {
     'balance-box': StatisticsBalanceBox,
     'price-box': StatisticsPriceBox,
     'header-box': StatisticsHeaderBox,
-    'navbar-months': NavbarMonths
+    'navbar-months': NavbarMonths,
+    'circle-box': StatisticsCircleBox
   },
   methods: {
     toHomepage () {
