@@ -2,7 +2,7 @@
   <div class="view">
     <button-back class="view__button" @clicked="toHomepage"></button-back> <!-- not part of the grid layout -->
     <header-box class="view__header"></header-box>
-    <div class="view__months">MONTH NAV</div>
+    <navbar-months class="view__navbar"></navbar-months>
     <div class="view__main">BALANCE CIRCLE</div>
     <price-box></price-box>
     <div class="view__balance">
@@ -17,6 +17,7 @@ import ButtonBack from '@/components/ButtonBack'
 import StatisticsBalanceBox from '@/components/StatisticsBalanceBox'
 import StatisticsPriceBox from '@/components/StatisticsPriceBox'
 import StatisticsHeaderBox from '@/components/StatisticsHeaderBox'
+import NavbarMonths from '@/components/NavbarMonths'
 
 export default {
   name: 'Statistics',
@@ -24,7 +25,8 @@ export default {
     'button-back': ButtonBack,
     'balance-box': StatisticsBalanceBox,
     'price-box': StatisticsPriceBox,
-    'header-box': StatisticsHeaderBox
+    'header-box': StatisticsHeaderBox,
+    'navbar-months': NavbarMonths
   },
   methods: {
     toHomepage () {
@@ -50,9 +52,5 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-}
-
-div {
-  // border: 1px solid red;
 }
 </style>
