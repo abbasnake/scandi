@@ -69,6 +69,8 @@ npm run build
         * [ ] add the purple banner
         * [ ] add profile pictures
     * [ ] do statistics view
+        * [ ] fix scroller
+        * [ ] make circle part
     * [ ] figure out and develop responsiveness for other screen sizes
 2. [ ] You are allowed to use vanilla JavaScript or any framework of your choice
     * [x] setup vue
